@@ -34,6 +34,24 @@ This repository contains Tealium JavaScript Extensions designed to standardize, 
 
 ---
 
+## User-Friendly Configuration
+
+At the **top of each extension**, you’ll find a **"Configuration Section"** where you can define **the actual variable names from your Tealium data layer**.
+
+- Example:
+  ```javascript
+  var dataLayerMapping = {
+    phone: 'phone',
+    phone_user: 'phone_user',
+    date_of_birth: 'date_of_birth',
+    // ... additional mappings
+  };
+  ```
+
+- **Update these values to match your actual data layer keys** before deploying.
+
+---
+
 ## How It Works
 
 ### ✅ **Shared Utilities**
@@ -81,6 +99,7 @@ This repository contains Tealium JavaScript Extensions designed to standardize, 
 1. Add **Shared Utilities** Extension (Scope: All Tags)
 2. Add **Page View Tag Extension** (Scope: Page View Tag Only)
 3. Add **Order Tag Extension** (Scope: Order Tag Only)
+4. **Update the Configuration Section** at the top of each tag extension to match your data layer keys.
 
 ---
 
